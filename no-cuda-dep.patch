@@ -1,0 +1,20 @@
+--- gnome-remote-desktop-44.0/meson.build~	2023-03-18 17:59:04.000000000 +0000
++++ gnome-remote-desktop-44.0/meson.build	2023-03-30 19:15:41.363445335 +0000
+@@ -47,7 +47,6 @@
+ 
+   dl_dep = cc.find_library('dl', required: true)
+ 
+-  cuda_dep = dependency('ffnvcodec', version: cuda_req)
+   freerdp_dep = dependency('freerdp2', version: freerdp_req)
+   freerdp_client_dep = dependency('freerdp-client2', version: freerdp_req)
+   freerdp_server_dep = dependency('freerdp-server2', version: freerdp_req)
+--- gnome-remote-desktop-44.0/src/meson.build~	2023-03-18 17:59:04.000000000 +0000
++++ gnome-remote-desktop-44.0/src/meson.build	2023-03-30 19:50:58.809730371 +0000
+@@ -124,7 +124,6 @@
+   ])
+ 
+   deps += [
+-    cuda_dep,
+     dl_dep,
+     freerdp_dep,
+     freerdp_server_dep,
