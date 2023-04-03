@@ -5,7 +5,7 @@
 #
 Name     : gnome-remote-desktop
 Version  : 44.0
-Release  : 1
+Release  : 2
 URL      : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/44.0/gnome-remote-desktop-44.0.tar.gz
 Source0  : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/44.0/gnome-remote-desktop-44.0.tar.gz
 Summary  : No detailed summary available
@@ -34,6 +34,7 @@ BuildRequires : pkgconfig(libdrm)
 BuildRequires : pkgconfig(libnotify)
 BuildRequires : pkgconfig(libpipewire-0.3)
 BuildRequires : pkgconfig(libsecret-1)
+BuildRequires : pkgconfig(libvncclient)
 BuildRequires : pkgconfig(tss2-esys)
 # Suppress stripping binaries
 %define __strip /bin/true
@@ -113,7 +114,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680207374
+export SOURCE_DATE_EPOCH=1680562183
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -122,7 +123,8 @@ export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -f
 export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
 export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
 export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain -Dfdk_aac=false  builddir
+CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain -Dfdk_aac=false \
+-Dvnc=true  builddir
 ninja -v -C builddir
 
 %install
