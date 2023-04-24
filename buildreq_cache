@@ -1,10 +1,8 @@
-44.0
+44.1
 fuse-dev
 libgudev-dev
 libnotify-dev
-pkgconfig(fdk-aac)
 pkgconfig(ffnvcodec)
-pkgconfig(freerdp2)
 pkgconfig(fuse3)
 pkgconfig(gbm)
 pkgconfig(gudev-1.0)
@@ -14,4 +12,3 @@ pkgconfig(libpipewire-0.3)
 pkgconfig(libsecret-1)
 pkgconfig(libvncclient)
 pkgconfig(tss2-esys)
-pypi(dbus)
