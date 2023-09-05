@@ -5,7 +5,7 @@
 #
 Name     : gnome-remote-desktop
 Version  : 44.2
-Release  : 6
+Release  : 7
 URL      : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/44.2/gnome-remote-desktop-44.2.tar.gz
 Source0  : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/44.2/gnome-remote-desktop-44.2.tar.gz
 Summary  : No detailed summary available
