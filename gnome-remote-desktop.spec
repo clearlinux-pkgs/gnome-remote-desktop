@@ -4,10 +4,10 @@
 # Using build pattern: meson
 #
 Name     : gnome-remote-desktop
-Version  : 44.2
-Release  : 8
-URL      : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/44.2/gnome-remote-desktop-44.2.tar.gz
-Source0  : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/44.2/gnome-remote-desktop-44.2.tar.gz
+Version  : 45.0
+Release  : 9
+URL      : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/45.0/gnome-remote-desktop-45.0.tar.gz
+Source0  : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/45.0/gnome-remote-desktop-45.0.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -25,16 +25,20 @@ BuildRequires : buildreq-meson
 BuildRequires : fuse-dev
 BuildRequires : libgudev-dev
 BuildRequires : libnotify-dev
+BuildRequires : mutter
+BuildRequires : mutter-dev
 BuildRequires : pkgconfig(ffnvcodec)
 BuildRequires : pkgconfig(fuse3)
 BuildRequires : pkgconfig(gbm)
 BuildRequires : pkgconfig(gudev-1.0)
 BuildRequires : pkgconfig(libdrm)
+BuildRequires : pkgconfig(libei-1.0)
 BuildRequires : pkgconfig(libnotify)
 BuildRequires : pkgconfig(libpipewire-0.3)
 BuildRequires : pkgconfig(libsecret-1)
 BuildRequires : pkgconfig(libvncclient)
 BuildRequires : pkgconfig(tss2-esys)
+BuildRequires : wireplumber-dev
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -106,10 +110,10 @@ services components for the gnome-remote-desktop package.
 
 
 %prep
-%setup -q -n gnome-remote-desktop-44.2
-cd %{_builddir}/gnome-remote-desktop-44.2
+%setup -q -n gnome-remote-desktop-45.0
+cd %{_builddir}/gnome-remote-desktop-45.0
 pushd ..
-cp -a gnome-remote-desktop-44.2 buildavx2
+cp -a gnome-remote-desktop-45.0 buildavx2
 popd
 
 %build
@@ -117,7 +121,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685511302
+export SOURCE_DATE_EPOCH=1695912147
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

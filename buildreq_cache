@@ -1,4 +1,4 @@
-44.2
+45.0
 fuse-dev
 libgudev-dev
 libnotify-dev
@@ -7,6 +7,7 @@ pkgconfig(fuse3)
 pkgconfig(gbm)
 pkgconfig(gudev-1.0)
 pkgconfig(libdrm)
+pkgconfig(libei-1.0)
 pkgconfig(libnotify)
 pkgconfig(libpipewire-0.3)
 pkgconfig(libsecret-1)
