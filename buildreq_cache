@@ -1,4 +1,4 @@
-45.0
+45.1
 fuse-dev
 libgudev-dev
 libnotify-dev
@@ -9,7 +9,6 @@ pkgconfig(gudev-1.0)
 pkgconfig(libdrm)
 pkgconfig(libei-1.0)
 pkgconfig(libnotify)
-pkgconfig(libpipewire-0.3)
 pkgconfig(libsecret-1)
 pkgconfig(libvncclient)
 pkgconfig(tss2-esys)
