@@ -7,7 +7,7 @@
 #
 Name     : gnome-remote-desktop
 Version  : 45.1
-Release  : 11
+Release  : 12
 URL      : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/45.1/gnome-remote-desktop-45.1.tar.gz
 Source0  : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/45.1/gnome-remote-desktop-45.1.tar.gz
 Summary  : No detailed summary available
