@@ -1,7 +1,8 @@
-45.1
+46.0
 fuse-dev
 libgudev-dev
 libnotify-dev
+opus-dev
 pkgconfig(ffnvcodec)
 pkgconfig(fuse3)
 pkgconfig(gbm)
@@ -11,4 +12,7 @@ pkgconfig(libei-1.0)
 pkgconfig(libnotify)
 pkgconfig(libsecret-1)
 pkgconfig(libvncclient)
+pkgconfig(opus)
+pkgconfig(polkit-gobject-1)
 pkgconfig(tss2-esys)
+polkit-dev
