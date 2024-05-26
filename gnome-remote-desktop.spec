@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : gnome-remote-desktop
-Version  : 46.1
-Release  : 16
-URL      : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/46.1/gnome-remote-desktop-46.1.tar.gz
-Source0  : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/46.1/gnome-remote-desktop-46.1.tar.gz
+Version  : 46.2
+Release  : 17
+URL      : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/46.2/gnome-remote-desktop-46.2.tar.gz
+Source0  : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/46.2/gnome-remote-desktop-46.2.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -127,10 +127,10 @@ services components for the gnome-remote-desktop package.
 
 
 %prep
-%setup -q -n gnome-remote-desktop-46.1
-cd %{_builddir}/gnome-remote-desktop-46.1
+%setup -q -n gnome-remote-desktop-46.2
+cd %{_builddir}/gnome-remote-desktop-46.2
 pushd ..
-cp -a gnome-remote-desktop-46.1 buildavx2
+cp -a gnome-remote-desktop-46.2 buildavx2
 popd
 
 %build
@@ -138,7 +138,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1713452052
+export SOURCE_DATE_EPOCH=1716742877
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -209,11 +209,15 @@ DESTDIR=%{buildroot} ninja -C builddir install
 /usr/share/gnome-remote-desktop/grd-cuda-damage-utils_30.ptx
 /usr/share/gnome-remote-desktop/grd.conf
 /usr/share/polkit-1/actions/org.gnome.remotedesktop.configure-system-daemon.policy
+/usr/share/polkit-1/actions/org.gnome.remotedesktop.enable-system-daemon.policy
+/usr/share/polkit-1/rules.d/20-gnome-remote-desktop.rules
 
 %files libexec
 %defattr(-,root,root,-)
 /V3/usr/libexec/gnome-remote-desktop-daemon
+/V3/usr/libexec/gnome-remote-desktop-enable-service
 /usr/libexec/gnome-remote-desktop-daemon
+/usr/libexec/gnome-remote-desktop-enable-service
 
 %files license
 %defattr(0644,root,root,0755)
