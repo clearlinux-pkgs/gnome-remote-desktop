@@ -7,7 +7,7 @@
 #
 Name     : gnome-remote-desktop
 Version  : 46.3
-Release  : 18
+Release  : 19
 URL      : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/46.3/gnome-remote-desktop-46.3.tar.gz
 Source0  : https://gitlab.gnome.org/GNOME/gnome-remote-desktop/-/archive/46.3/gnome-remote-desktop-46.3.tar.gz
 Summary  : No detailed summary available
