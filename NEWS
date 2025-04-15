@@ -1,31 +1,60 @@
-47.3
+48.1
 ====
-* Fix gdctl crash when setting VNC password
-* Don't hard code keyboard type
-
-Contributors:
-  Jonas Ådahl, Jerry, Pascal Nowack
-
-47.2
-====
-
-Translators:
-  Nathan Follens [nl], Милош Поповић [sr, sr@latin], Quentin PAGÈS [oc],
-  Danial Behzadi [fa]
-
-
-47.1
-====
-* General code improvements
+* Reduce latency when PipeWire stream uses shared memories
 
 Contributors:
   Pascal Nowack
 
 Translators:
-  Hugo Carvalho [pt], Jordi Mas i Hernandez [ca],
-  Juliano de Souza Camargo [pt_BR], Rūdolfs Mazurs [lv],
-  Ahmed Noor Kader Mustajir Md Eusoff [ms]
+  Baxrom Raxmatov [uz], Cheng-Chia Tseng [zh_TW], Philipp Kiemle [de]
 
+48.0
+====
+Translators:
+  A S Alam [pa], Aurimas Černius [lt], Seong-ho Cho [ko],
+  Balázs Úr [hu], Daniel Mustieles [es], Ask Hjorth Larsen [da],
+  Andika Triwidada [id], Jiri Grönroos [fi], Pawan Chitrakar [ne],
+
+48.rc
+=====
+* Add support for hardware encoded AVC444
+
+Contributors:
+  Pascal Nowack
+
+Translators:
+  Rafael Fontenelle [pt_BR], Giannis Antypas [el], Daniel Rusek [cs],
+  Piotr Drąg [pl], Anders Jonsson [sv], Ekaterine Papava [ka],
+  Alexandre Franke [fr], Yuri Chornoivan [uk], twlvnn kraftwerk [bg],
+  Scrambled 777 [hi], Quentin PAGÈS [oc], Asier Sarasua Garmendia [eu],
+  Hugo Carvalho [pt], Fran Dieguez [gl], Jordi Mas i Hernandez [ca]
+
+48.beta
+=======
+* Add support for zero copy rendering with Vulkan and VAAPI
+  (disabled by default)
+
+Contributors:
+  Pascal Nowack, traze
+
+
+48.alpha
+========
+* General code improvements
+* Fix gdctl crash when setting VNC password
+* Prepare for Vulkan and libva based hardware acceleration
+* Add user documentation
+* Don't hard code keyboard type
+
+Contributors:
+  Jonas Ådahl, Jerry, Pascal Nowack, Bartłomiej Piotrowski, Daniel Rusek
+
+Translators:
+  Hugo Carvalho [pt], Jordi Mas i Hernandez [ca],
+  Juliano de Souza Camargo [pt_BR], Rūdolfs Mazurs [lv], Danial Behzadi [fa],
+  Luming Zh [zh_CN], Martin [sl], Vasil Pupkin [be], Nathan Follens [nl],
+  Artur S0 [ru], Милош Поповић [sr], Quentin PAGÈS [oc], Yaron Shahrabani [he],
+  Sabri Ünal [tr]
 
 47.0
 ====
